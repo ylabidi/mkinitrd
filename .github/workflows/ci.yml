@@ -179,7 +179,7 @@ jobs:
     strategy:
       matrix:
         name: [
-          "altlinux",
+          "ubuntu",
         ]
         test: [
           "sshfs",
