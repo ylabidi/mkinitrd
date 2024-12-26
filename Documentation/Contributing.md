@@ -1,17 +1,17 @@
-# Contributing to make-initrd
+# Contributing to mkinitrd
 
 I'm really glad you're reading this, because we need volunteer developers to
 help this project.
 
 Here are some important resources:
 
-* [Mailing list](https://lists.altlinux.org/mailman/listinfo/make-initrd).
-* [Wiki](https://github.com/osboot/make-initrd/wiki).
-* Bugs? Use [github](https://github.com/osboot/make-initrd/issues) to report them.
+* [Mailing list](https://lists.altlinux.org/mailman/listinfo/mkinitrd).
+* [Wiki](https://github.com/ylabidi/mkinitrd/wiki).
+* Bugs? Use [github](https://github.com/ylabidi/mkinitrd/issues) to report them.
 * How to write [new features](NewFeature.md).
 
 
-**make-initrd** uses the linux kernel model where git is not only source repository,
+**mkinitrd** uses the linux kernel model where git is not only source repository,
 but also the way to track contributions and copyrights.
 
 Each submitted patch must have a "Signed-off-by" line.  Patches without

@@ -4,7 +4,7 @@ PROJECT = @PACKAGE_NAME@
 VERSION = @PACKAGE_VERSION@
 
 # Temprary directory used for processing all images.
-# It is created once when the make-initrd starts.
+# It is created once when the mkinitrd starts.
 TEMPDIR		?=
 
 ifeq "$(TEMPDIR)" ''

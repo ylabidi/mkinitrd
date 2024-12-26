@@ -124,7 +124,7 @@ elif compress="$(type -P gzip)"; then
 	suffix=".gz"
 fi
 
-outfile="$PWD/make-initrd-bugreport-$(date +"%Y%m%d").tar$suffix"
+outfile="$PWD/mkinitrd-bugreport-$(date +"%Y%m%d").tar$suffix"
 
 cd "$workdir"
 tar -cf - report | "$compress" "${compargs[@]}" >"$outfile"

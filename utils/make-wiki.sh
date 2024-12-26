@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 [ -d .wiki ] ||
-	git clone https://github.com/osboot/make-initrd.wiki.git .wiki
+	git clone https://github.com/ylabidi/mkinitrd.wiki.git .wiki
 
 copy_readme()
 {

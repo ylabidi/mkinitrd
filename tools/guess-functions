@@ -1,8 +1,8 @@
 #!/bin/bash -efu
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if [ -z "${__included_make_initrd_guess_functions-}" ]; then
-__included_make_initrd_guess_functions=1
+if [ -z "${__included_mkinitrd_guess_functions-}" ]; then
+__included_mkinitrd_guess_functions=1
 
 . sh-functions
 
@@ -173,4 +173,4 @@ is_active_feature()
 	return 1
 }
 
-fi #__included_make_initrd_guess_functions
+fi #__included_mkinitrd_guess_functions

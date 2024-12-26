@@ -9,7 +9,7 @@ the image.
 - **guess-modules** - This goal prints list of module needed to mount specified
   mountpoint or block device.
 - **bug-report** - This goal collects system configuration data and puts those
-  into an archive. If you have any problems with make-initrd this goal will help
+  into an archive. If you have any problems with mkinitrd this goal will help
   to gather the information necessary for developers to diagnose and fix bugs.
 
 ## See also

@@ -159,7 +159,7 @@ for step in "$@"; do
 
 			export PATH="$builddir/.build/dest/usr/sbin:$builddir/.build/dest/usr/bin:\$PATH"
 
-			$builddir/.build/dest/usr/sbin/make-initrd \
+			$builddir/.build/dest/usr/sbin/mkinitrd \
 				-k \$(find /lib/modules -mindepth 1 -maxdepth 1 -printf '%f\n' -quit)
 
 			cp -L /boot/vmlinuz       $builddir/$workdir/boot-ks-vmlinuz

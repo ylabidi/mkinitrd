@@ -1,6 +1,6 @@
 # Configuration
 
-Configuration file for make-initrd is `/etc/initrd.mk`. In essence,
+Configuration file for mkinitrd is `/etc/initrd.mk`. In essence,
 the configuration file is a Makefile.  Actually part of it.
 
 You can generate multiple images for one kernel version (for example general,

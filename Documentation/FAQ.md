@@ -1,7 +1,7 @@
 # FAQ
 
 This document provides links to documents that answer some questions about
-`make-initrd`.
+`mkinitrd`.
 
 ## How it works ?
 
@@ -17,7 +17,7 @@ If the resulting initramfs image does not work and you do not know what to do,
 then write to me and attach the result of the command:
 
 ```bash
-$ make-initrd bug-report
+$ mkinitrd bug-report
 ```
 
 As a result, an archive will be made with information about the equipment on the

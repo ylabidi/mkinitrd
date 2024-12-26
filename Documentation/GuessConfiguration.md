@@ -1,6 +1,6 @@
 # Overview
 
-The `make-initrd` tries to guess what the root partition is made of and what
+The `mkinitrd` tries to guess what the root partition is made of and what
 features are used for the loaded system.
 
 Most users don't have a good idea of how the distribution's installer created
@@ -15,13 +15,13 @@ AUTODETECT = all
 
 # How It Works ?
 
-Before actually generating the image, `make-initrd` parses the **current**
+Before actually generating the image, `mkinitrd` parses the **current**
 configuration.
 
 Quite a long time ago, a wonderful sysfs virtual file system appeared in the
 linux kernel. It is usually mounted in `/sys`. It is required for many purposes
 and is usually always mounted on the system. To guess the hardware
-configuration, `make-initrd` parses `/sys` and must have privileges to read any
+configuration, `mkinitrd` parses `/sys` and must have privileges to read any
 data from there.
 
 Creating an image consists of two parts:
@@ -103,14 +103,14 @@ modprobe: FATAL: Module pci:v00001022d00001483sv00001022sd00001234bc06sc04i00 no
 
 So, we need to add modules to the initramfs: `nvme`, `nvme-core` and `t10-pi`.
 
-This is how `make-initrd` looks for kernel modules using `/sys`.
+This is how `mkinitrd` looks for kernel modules using `/sys`.
 
 ## Guess Configuration File
 
 Using guess modules, you can generate a minimal config for your system:
 
 ```bash
-$ make-initrd -D guess-config
+$ mkinitrd -D guess-config
 ```
 ```make
 MOUNTPOINTS = \
@@ -129,7 +129,7 @@ FEATURES += \
 You can also see what modules are required for any mountpoint or block device.
 
 ```bash
-$ make-initrd -D guess-modules /
+$ mkinitrd -D guess-modules /
 /lib/modules/5.14.0/kernel/arch/x86/crypto/crc32c-intel.ko
 /lib/modules/5.14.0/kernel/block/t10-pi.ko
 /lib/modules/5.14.0/kernel/drivers/nvme/host/nvme-core.ko

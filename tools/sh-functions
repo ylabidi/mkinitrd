@@ -1,8 +1,8 @@
 #!/bin/bash -efu
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if [ -z "${__included_make_initrd_sh_functions-}" ]; then
-__included_make_initrd_sh_functions=1
+if [ -z "${__included_mkinitrd_sh_functions-}" ]; then
+__included_mkinitrd_sh_functions=1
 
 . shell-error
 . wrapper-functions
@@ -227,4 +227,4 @@ if [ -n "${MAKE_INITRD_TRACE-}" ]; then
 	}
 fi
 
-fi #__included_make_initrd_sh_functions
+fi #__included_mkinitrd_sh_functions

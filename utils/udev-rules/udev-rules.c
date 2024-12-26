@@ -142,7 +142,7 @@ int main(int argc, char **argv)
 			warnx("For more information:");
 			warn_header = 1;
 		}
-		warnx("  https://github.com/osboot/make-initrd/wiki/udev-rules-W%s", warning_str[i]);
+		warnx("  https://github.com/ylabidi/mkinitrd/wiki/udev-rules-W%s", warning_str[i]);
 	}
 end:
 	free_goto_label(&gotos);

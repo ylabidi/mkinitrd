@@ -19,7 +19,7 @@ config=
 
 print_version() {
 	cat <<-EOF
-	make-initrd version @PACKAGE_VERSION@
+	mkinitrd version @PACKAGE_VERSION@
 	Written by Alexey Gladkov, Kirill Shutemov.
 
 	Copyright (C) 2009,2024  Alexey Gladkov <gladkov.alexey@gmail.com>
@@ -33,12 +33,12 @@ print_version() {
 show_help() {
 	cat <<-EOF
 
-	Usage: make-initrd [<option>]
-	   or: make-initrd guess-modules [<device>|<directory>]
-	   or: make-initrd guess-config
-	   or: make-initrd bug-report
+	Usage: mkinitrd [<option>]
+	   or: mkinitrd guess-modules [<device>|<directory>]
+	   or: mkinitrd guess-config
+	   or: mkinitrd bug-report
 
-	make-initrd is a new, uevent-driven initramfs
+	mkinitrd is a new, uevent-driven initramfs
 	infrastructure based around udev.
 
 	Without options, the program generates images
