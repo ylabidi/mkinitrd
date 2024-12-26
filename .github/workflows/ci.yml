@@ -2,9 +2,9 @@ name: "CI"
 on:
   push:
     branches:
-      - "master"
-      - "for-master"
-      - "patchset/**"
+      - "main"
+      - "upkeep/**"
+      - "hostfix/**"
     paths-ignore:
       - "**.md"
 jobs:
