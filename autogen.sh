@@ -55,7 +55,7 @@ foreach()
 check_program()
 {
 	type -p "$prog" >/dev/null 2>&1 ||
-		fatal "ERROR: You must have $varname installed to build the make-initrd."
+		fatal "ERROR: You must have $varname installed to build the mkinitrd."
 
 	if [ -n "$version_pattern" ]; then
 		local version="$(get_version "$varname")"

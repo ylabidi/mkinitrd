@@ -24,11 +24,11 @@ fi
 
 mkdir -p -- ./etc
 cat > ./etc/initrd-release <<EOF
-ID=make-initrd
+ID=mkinitrd
 VERSION_ID=$version
-NAME="make-initrd"
-VERSION="${VERSION:+$VERSION }make-initrd-$version"
-PRETTY_NAME="${PRETTY_NAME:+$PRETTY_NAME }make-initrd-$version (Initramfs)"
+NAME="mkinitrd"
+VERSION="${VERSION:+$VERSION }mkinitrd-$version"
+PRETTY_NAME="${PRETTY_NAME:+$PRETTY_NAME }mkinitrd-$version (Initramfs)"
 ANSI_COLOR="0;34"
 EOF
 

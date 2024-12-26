@@ -1,8 +1,8 @@
-# make-initrd
+# mkinitrd
 
-make-initrd is a new, uevent-driven initramfs infrastructure based around udev.
+mkinitrd is a new, uevent-driven initramfs infrastructure based around udev.
 
-The make-initrd is intended for creating initramfs images. The project consists
+The mkinitrd is intended for creating initramfs images. The project consists
 of two main parts:
 - Utilities for initramfs image creation (this includes determining the kernel
   modules required for the current hardware, adding required utilities, etc).
@@ -16,7 +16,7 @@ will apply stage.
 ## Documentation
 
 Documentation about the project is located in the [Documentation directory](Documentation/)
-or on the [wiki](https://github.com/osboot/make-initrd/wiki) where the information
+or on the [wiki](https://github.com/ylabidi/mkinitrd/wiki) where the information
 is collected in one place.
 
 ## Build Requires

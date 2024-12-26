@@ -136,7 +136,7 @@ for step in "$@"; do
 				gh_group_end
 			fi
 
-			gh_group_start "adding make-initrd binaries"
+			gh_group_start "adding mkinitrd binaries"
 
 			run podman run --rm -ti \
 				--mount="type=image,src=localhost/mi-$TESTNAME-$VENDOR:sysimage,dst=/image" \
@@ -177,9 +177,9 @@ for step in "$@"; do
 			EOF1
 
 			cat > /etc/sysconfig/installkernel <<EOF1
-			 INITRD_GENERATOR=make-initrd
-			 MAKE_INITRD=$builddir/.build/dest/usr/sbin/make-initrd
-			 MKINITRD=$builddir/.build/dest/usr/sbin/mkinitrd-make-initrd
+			 INITRD_GENERATOR=mkinitrd
+			 MAKE_INITRD=$builddir/.build/dest/usr/sbin/mkinitrd
+			 MKINITRD=$builddir/.build/dest/usr/sbin/mkinitrd-mkinitrd
 			EOF1
 
 			apt-get $apt_args update

@@ -1,8 +1,8 @@
 #!/bin/bash -efu
 # SPDX-License-Identifier: GPL-2.0-only
 
-if [ -z "${__included_make_initrd_sh_wrapper_functions-}" ]; then
-__included_make_initrd_sh_wrapper_functions=1
+if [ -z "${__included_mkinitrd_sh_wrapper_functions-}" ]; then
+__included_mkinitrd_sh_wrapper_functions=1
 
 . shell-getopt
 

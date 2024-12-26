@@ -1,19 +1,19 @@
-make-initrd(1)
+mkinitrd(1)
 
 # NAME
 
-make-initrd - creates initial ramdisk images for preloading modules
+mkinitrd - creates initial ramdisk images for preloading modules
 
 # SYNOPSIS
 
-*make-initrd* [<option>]++
-*make-initrd* guess-modules [<device>|<directory>]++
-*make-initrd* guess-config++
-*make-initrd* bug-report
+*mkinitrd* [<option>]++
+*mkinitrd* guess-modules [<device>|<directory>]++
+*mkinitrd* guess-config++
+*mkinitrd* bug-report
 
 # DESCRIPTION
 
-*make-initrd* is a new, uevent-driven initramfs infrastructure based around udev.
+*mkinitrd* is a new, uevent-driven initramfs infrastructure based around udev.
 Without options, the program generates images for all the configuration files.
 
 *bug-report*
@@ -35,7 +35,7 @@ Without options, the program generates images for all the configuration files.
 	Shows information about feature. Example:
 
 	```
-	$ make-initrd feature-info mdadm luks
+	$ mkinitrd feature-info mdadm luks
 
 	Feature mdadm
 	  requires : add-udev-rules
@@ -86,7 +86,7 @@ Without options, the program generates images for all the configuration files.
 
 # FILES
 
-*/etc/initrd.mk* - Main configuration file for make-initrd.
+*/etc/initrd.mk* - Main configuration file for mkinitrd.
 
 */etc/initrd.mk.d* - Directory for optional configuration files.
 

@@ -1,6 +1,6 @@
 # How to create a new feature ?
 
-Features serve to extend the functionality of the `make-initrd`.
+Features serve to extend the functionality of the `mkinitrd`.
 Features are located in the `features` directory.
 
 ## Structure

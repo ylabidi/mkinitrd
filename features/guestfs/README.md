@@ -15,5 +15,5 @@ and executed inside the virtual machine.
 The guestfs initrd image is usually created with the command:
 
 ```bash
-$ make-initrd --no-checks --config=/etc/initrd.mk.d/guestfs.mk.example --kernel=$KVER
+$ mkinitrd --no-checks --config=/etc/initrd.mk.d/guestfs.mk.example --kernel=$KVER
 ```

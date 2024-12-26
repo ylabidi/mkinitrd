@@ -18,4 +18,4 @@ export MAKE_INITRD_TRACE_SRC_PATTERNS='features/rootfs/guess/fstype guess/root/a
 export MAKE_INITRD_TRACE_RUN_PATTERNS='features/rootfs/guess/fstype guess/root/action'
 
 utils/mi-bug-report "$cwd/rootfs.tar.xz" -- \
-	.build/dest/usr/sbin/make-initrd --no-depmod test-guess
+	.build/dest/usr/sbin/mkinitrd --no-depmod test-guess
