@@ -238,7 +238,7 @@ jobs:
 
   metrics:
     name: "Metrics"
-    needs: [ e2e-local, e2e-network ]
+    needs: [ e2e-local ]
     runs-on: ubuntu-latest
     if: success() || failure()
     steps:
